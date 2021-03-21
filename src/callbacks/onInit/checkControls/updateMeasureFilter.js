@@ -1,6 +1,7 @@
 export default function updateMeasureFilter() {
     this.measure = {};
     const measureInput = this.controls.config.inputs.find(input => input.label === 'Measure');
+    measureInput.values = this.sh_measures;
     if (
         this.config.start_value &&
         this.sh_measures.indexOf(this.config.start_value) < 0 &&

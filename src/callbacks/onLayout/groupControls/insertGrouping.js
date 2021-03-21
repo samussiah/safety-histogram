@@ -5,7 +5,8 @@ export default function insertGrouping(selector, label) {
         .classed(`${className}-div`, true)
         .style({
             display: 'inline-block',
-            'margin-right': '5px'
+            'margin-right': '5px',
+            'vertical-align': 'middle'
         });
     const fieldset = div
         .append('fieldset')

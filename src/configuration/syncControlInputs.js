@@ -6,7 +6,9 @@ export default function syncControlInputs(controlInputs, settings) {
             const filterObj = {
                 type: 'subsetter',
                 value_col: filter.value_col || filter,
-                label: filter.label || filter.value_col || filter
+                label: filter.label || filter.value_col || filter,
+                start: filter.start || null,
+                all: filter.all || true,
             };
             controlInputs.splice(position, 0, filterObj);
             ++position;

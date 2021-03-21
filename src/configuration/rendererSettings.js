@@ -2,6 +2,7 @@ export default function rendererSettings() {
     return {
         // data mappings
         measure_col: 'TEST', // required
+        measure_order_col: 'TESTN', // optional
         value_col: 'STRESN', // required
         id_col: 'USUBJID', // optional
         unit_col: 'STRESU', // optional
