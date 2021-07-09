@@ -1,5 +1,4 @@
 export default function updateMeasureFilter() {
-    this.measure = {};
     const measureInput = this.controls.config.inputs.find(input => input.label === 'Measure');
     measureInput.values = this.sh_measures;
     if (
